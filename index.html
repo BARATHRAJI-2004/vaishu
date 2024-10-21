@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  
+   <!-- Audio player for background music -->
+    <audio id="birthdaySong">
+        <source src="happy_birthday_song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <button id="playButton">Play Music</button> <!-- Initial text is "Play Music" -->
 
     <div class="container">
         <div class="bubbles"></div>
@@ -17,12 +23,7 @@
             <p class="message">Sorry For The Delay Wishes And Average Gift!!!!!</p>
             <p class="message">Once again Happy Birthday, Then Sorrryyyy...</p>
         </div>
-    <audio id="birthdaySong" autoplay loop>
-        <source src="my.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
-    <button id="playButton">Pause Music</button>
+    
 
     <script src="script.js"></script>
 </body>
