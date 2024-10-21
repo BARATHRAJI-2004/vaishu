@@ -1,6 +1,23 @@
 
 window.onload = function() {
     console.log("Birthday page loaded!");
+    
+    const audio = document.getElementById('birthdaySong');
+    const playButton = document.getElementById('playButton');
+
+    // Play the audio automatically when the page loads
+    audio.play();
+
+    // Set up button to pause/play music
+    playButton.addEventListener('click', function() {
+        if (audio.paused) {
+            audio.play();
+            playButton.textContent = 'Pause Music'; // Change button text to Pause
+        } else {
+            audio.pause();
+            playButton.textContent = 'Play Music'; // Change button text to Play
+        }
+    });
 
     // Generate bubbles dynamically
     const bubblesContainer = document.querySelector('.bubbles');
@@ -15,14 +32,7 @@ window.onload = function() {
         
         bubblesContainer.appendChild(bubble);
     }
-    const audio = document.getElementById('birthdaySong');
-    
-    // Play the audio on user interaction
-    document.body.addEventListener('click', function() {
-        if (audio.paused) {
-            audio.play();
-        }
-    });
+   
     // Generate balloons dynamically
     const balloonsContainer = document.querySelector('.balloons');
     for (let i = 0; i < 30; i++) { // Create 10 balloons
