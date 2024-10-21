@@ -1,10 +1,22 @@
 window.onload = function() {
     console.log("Birthday page loaded!");
 
-    const audioPlayer = document.getElementById('audioPlayer');
+    const backgroundAudio = document.getElementById('backgroundAudio');
 
-function playAudio() {
-    audioPlayer.play();
+// Play audio when the page loads (if autoplay does not work)
+window.onload = function() {
+    backgroundAudio.play().catch(error => {
+        console.log('Playback failed:', error);
+    });
+};
+
+// You can also add functions to control the audio if needed
+function playBackgroundAudio() {
+    backgroundAudio.play();
+}
+
+function pauseBackgroundAudio() {
+    backgroundAudio.pause();
 }
     // Generate bubbles dynamically
     const bubblesContainer = document.querySelector('.bubbles');
