@@ -1,19 +1,11 @@
 window.onload = function() {
     console.log("Birthday page loaded!");
 
-    const audio = document.getElementById('birthdaySong');
-    const playButton = document.getElementById('playButton');
+    const audioPlayer = document.getElementById('audioPlayer');
 
-    // Set up button to play/pause music
-    playButton.addEventListener('click', function() {
-        if (audio.paused) {
-            audio.play();
-            playButton.textContent = 'Pause Music'; // Change button text to Pause
-        } else {
-            audio.pause();
-            playButton.textContent = 'Play Music'; // Change button text to Play
-        }
-    }
+function playAudio() {
+    audioPlayer.play();
+}
     // Generate bubbles dynamically
     const bubblesContainer = document.querySelector('.bubbles');
     for (let i = 0; i < 20; i++) { // Create 20 bubbles
