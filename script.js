@@ -1,7 +1,6 @@
-
 window.onload = function() {
     console.log("Birthday page loaded!");
-    
+
     const audio = document.getElementById('birthdaySong');
     const playButton = document.getElementById('playButton');
 
@@ -14,7 +13,7 @@ window.onload = function() {
             audio.pause();
             playButton.textContent = 'Play Music'; // Change button text to Play
         }
-    });
+    }
     // Generate bubbles dynamically
     const bubblesContainer = document.querySelector('.bubbles');
     for (let i = 0; i < 20; i++) { // Create 20 bubbles
