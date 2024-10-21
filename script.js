@@ -23,7 +23,7 @@ window.onload = function() {
         
         // Set random bubble position and delay
         bubble.style.left = `${Math.random() * 100}vw`;
-        bubble.style.animationDelay = `${Math.random() * 4}s`;
+        bubble.style.animationDelay = `${Math.random() * 7}s`;
         bubble.style.width = bubble.style.height = `${Math.random() * 30 + 20}px`; // Random size
         
         bubblesContainer.appendChild(bubble);
@@ -37,7 +37,7 @@ window.onload = function() {
 
         // Set random balloon position
         balloon.style.left = `${Math.random() * 100}vw`;
-        balloon.style.animationDuration = `${Math.random() * 1 + 8}s`; // Random duration between 2s and 5s
+        balloon.style.animationDuration = `${Math.random() * 20 + 40}s`; // Random duration between 2s and 5s
 
         balloonsContainer.appendChild(balloon);
     }
