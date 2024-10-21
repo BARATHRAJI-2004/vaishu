@@ -1,3 +1,18 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const audio = document.getElementById('birthdaySong');
+    const playButton = document.getElementById('playButton');
+
+    // Play button functionality
+    playButton.addEventListener('click', () => {
+        if (audio.paused) {
+            audio.play();
+            playButton.textContent = "Pause Background Music";
+        } else {
+            audio.pause();
+            playButton.textContent = "Play Background Music";
+        }
+    });
+
 window.onload = function() {
     console.log("Birthday page loaded!");
 
