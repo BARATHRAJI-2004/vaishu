@@ -15,7 +15,14 @@ window.onload = function() {
         
         bubblesContainer.appendChild(bubble);
     }
-
+    const audio = document.getElementById('birthdaySong');
+    
+    // Play the audio on user interaction
+    document.body.addEventListener('click', function() {
+        if (audio.paused) {
+            audio.play();
+        }
+    });
     // Generate balloons dynamically
     const balloonsContainer = document.querySelector('.balloons');
     for (let i = 0; i < 30; i++) { // Create 10 balloons
