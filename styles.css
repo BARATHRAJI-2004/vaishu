@@ -126,18 +126,3 @@ body {
         opacity: 0; /* Fade out */
     }
 }
-/* Style for Play Button */
-#playButton {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #ff69b4; /* Hotpink */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#playButton:hover {
-    background-color: #ff1493; /* Deep pink */
-}
