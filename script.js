@@ -37,7 +37,7 @@ window.onload = function() {
 
         // Set random balloon position
         balloon.style.left = `${Math.random() * 100}vw`;
-        balloon.style.animationDuration = `${Math.random() * 3 + 6}s`; // Random duration between 2s and 5s
+        balloon.style.animationDuration = `${Math.random() * 1 + 8}s`; // Random duration between 2s and 5s
 
         balloonsContainer.appendChild(balloon);
     }
