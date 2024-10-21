@@ -7,13 +7,11 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <!-- Audio player for background music -->
-    <audio id="birthdaySong">
-        <source src="my.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
+    <audio id="audioPlayer" controls>
+        <source src="my3.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
     </audio>
-
-    <button id="playButton">Play Music</button> <!-- Button to play/pause music -->
+    <button onclick="playAudio()">Play</button>
 
     <div class="container">
         <div class="bubbles"></div>
