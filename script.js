@@ -5,10 +5,7 @@ window.onload = function() {
     const audio = document.getElementById('birthdaySong');
     const playButton = document.getElementById('playButton');
 
-    // Play the audio automatically when the page loads
-    audio.play();
-
-    // Set up button to pause/play music
+    // Set up button to play/pause music
     playButton.addEventListener('click', function() {
         if (audio.paused) {
             audio.play();
@@ -18,7 +15,6 @@ window.onload = function() {
             playButton.textContent = 'Play Music'; // Change button text to Play
         }
     });
-
     // Generate bubbles dynamically
     const bubblesContainer = document.querySelector('.bubbles');
     for (let i = 0; i < 20; i++) { // Create 20 bubbles
